@@ -7,12 +7,12 @@ recommendations_get_style()
 
 @st.cache_data
 def load_data(url, **kwargs):
-    df = pd.read_csv(url, **kwargs)
+    df = pd.read_parquet(url, **kwargs)
     return df
 
 
-books = load_data('data/books.csv', compression='gzip')
-book_pairs = load_data('data/recommendations/non_personalized.csv', compression='gzip')
+books = load_data('data/books.parquet')
+book_pairs = load_data('data/recommendations/non_personalized.parquet')
 
 with st.sidebar:
     with st.container():
