@@ -9,4 +9,5 @@ st.set_page_config(
 st.title("Book Recommandation Web App")
 st.text("Welcome to our web app, designed to provide personalized book recommendations.")
 
-
+import pandas as pd 
+pd.DataFrame().to_parquet()
