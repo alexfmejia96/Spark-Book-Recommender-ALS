@@ -1,5 +1,8 @@
 import streamlit as st
 
+from components.custom import *
+add_constant_elements()
+
 st.title("Upload Datasets")
 st.title("")
 

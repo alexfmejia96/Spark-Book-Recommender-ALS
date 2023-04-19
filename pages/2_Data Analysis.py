@@ -6,6 +6,9 @@ import numpy
 from pandas.plotting import scatter_matrix
 from itertools import permutations
 
+from components.custom import *
+add_constant_elements()
+
 st.title("Data Analysis")
 st.text("Please enter the book name and upload analyzing files and then press button to start.")
 startAnalysis = st.sidebar.button("Start analysis")

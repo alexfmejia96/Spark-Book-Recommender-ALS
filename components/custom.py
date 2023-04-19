@@ -1,5 +1,13 @@
 import streamlit as st
 import pandas as pd
+from st_pages import Page, show_pages
+
+def update_pages_names():
+    show_pages([
+        Page("./app.py", "Home", "🏠"),
+        Page("pages/2_Data Analysis.py", "Data Analysis", "📊"),
+        Page("pages/3_Recommendations.py", "Recommendations", "📚")
+    ])
 
 def recommendations_get_style():
     style = st.markdown("""
@@ -50,6 +58,18 @@ def recommendations_get_style():
         }
         </style>""", unsafe_allow_html=True)
     return style
+
+def add_constant_elements(text=''):
+    
+    st.title("Book Recommendation Web App")
+    st.text(text)
+    st.divider()
+    with st.sidebar:
+        with st.container():
+            
+            st.empty()
+    return None
+    
 
 def book_container(book_match, books, col_name):
     book = books[books[col_name] == book_match].iloc[0]
