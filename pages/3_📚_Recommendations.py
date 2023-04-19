@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from components.custom import *
 
-update_pages_names()
+#update_pages_names()
 recommendations_get_style()
 
 @st.cache_data

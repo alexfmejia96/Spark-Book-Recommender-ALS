@@ -5,8 +5,8 @@ from st_pages import Page, show_pages
 def update_pages_names():
     show_pages([
         Page("./app.py", "Home", "🏠"),
-        Page("pages/2_Data Analysis.py", "Data Analysis", "📊"),
-        Page("pages/3_Recommendations.py", "Recommendations", "📚")
+        Page("pages/2_📊_Data Analysis.py", "Data Analysis", "📊"),
+        Page("pages/3_📚_Recommendations.py", "Recommendations", "📚")
     ])
 
 def recommendations_get_style():
