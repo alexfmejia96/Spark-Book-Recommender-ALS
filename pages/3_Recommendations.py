@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from components.custom import *
 
-#st.set_page_config(layout='wide')
+update_pages_names()
 recommendations_get_style()
 
 @st.cache_data

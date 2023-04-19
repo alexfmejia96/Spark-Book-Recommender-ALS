@@ -63,7 +63,7 @@ def add_constant_elements(text=''):
     
     st.title("Book Recommendation Web App")
     st.text(text)
-    st.divider()
+    st.markdown("---")
     with st.sidebar:
         with st.container():
             
